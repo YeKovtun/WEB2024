@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title><%= review.title %></title>
+</head>
+<body>
+    <header>
+        <h1><%= review.title %></h1>
+        <a href="/">Повернутися до списку</a>
+    </header>
+    <main>
+        <p><%= review.content %></p>
+        <small>Дата публікації: <%= review.date.toLocaleDateString() %></small>
+    </main>
+</body>
+</html>

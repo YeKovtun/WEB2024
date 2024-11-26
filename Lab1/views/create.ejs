@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Створити рецепт</title>
+</head>
+<body>
+    <header>
+        <h1>Створити рецепт/h1>
+        <h1><a href="/">На головну</a></h1>
+    </header>
+    <main>
+        <form action="/create" method="POST">
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Опис:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+
+            <button type="submit">Додати</button>
+        </form>
+    </main>
+</body>
+</html>
